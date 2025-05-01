@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamika's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Anamika</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Hello, I'm Anamika">Hello, I'm Anamika</h1>
+                <div class="hero-subtitle">Full Stack Developer</div>
+                <p class="hero-description">
+                    I've won multiple hackathons and worked with 3 startups where I led and built products from scratch,
+                    reducing latency and AI costs. On my journey, I've developed scalable systems, dynamic user interfaces,
+                    and seamless backend architectures — turning ideas into impactful realities.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Anamika1608" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Full Stack Developer with experience in building scalable web applications,
+                        AI-powered systems, and collaborative platforms. I specialize in reducing latency, optimizing costs,
+                        and creating seamless user experiences.
+                    </p>
+                    <p>
+                        With a strong foundation in both frontend and backend technologies, I enjoy turning complex
+                        problems into simple, beautiful, and intuitive solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>SDE Intern</h3>
+                            <span class="time-period">Dec 2024 - Feb 2025</span>
+                        </div>
+                        <div class="company">Mazinda</div>
+                        <ul class="experience-points">
+                            <li>Engineered a delivery partner app with resumable onboarding and real-time GPS tracking, coupled with background push notifications, <span class="highlight">reducing order assignment time by 30%</span>.</li>
+                            <li>Centralized delivery operations by constructing an admin dashboard leveraging real-time geolocation data to monitor 200+ daily deliveries and flag orders facing delays, <span class="highlight">improving on-time delivery rates by 15%</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack Intern</h3>
+                            <span class="time-period">Sept 2024 - Dec 2024</span>
+                        </div>
+                        <div class="company">I am Better than u</div>
+                        <ul class="experience-points">
+                            <li>Optimized backend performance by integrating Cloudinary for file uploads, <span class="highlight">reducing latency by 30%</span>, and implemented Stripe payment processing with a <span class="highlight">98% success rate</span>.</li>
+                            <li>Architected real-time collaboration features using Socket.io and Mediasoup, enabling video conferencing for <span class="highlight">100+ concurrent users</span> and group chat functionality.</li>
+                            <li>Developed user authentication system with two-factor authentication via Twilio and Nodemailer, <span class="highlight">reducing failed login attempts by 40%</span>, and an e-commerce module with friend networking features.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project cards will be generated from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MERN Stack</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Socket.io</span>
+                        <span class="skill-tag">React-Native</span>
+                        <span class="skill-tag">Prisma ORM</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Nest JS</span>
+                        <span class="skill-tag">Next JS</span>
+                        <span class="skill-tag">Plasmo</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>CS Fundamentals</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">DBMS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>NXP Women In Tech Scholar'24</h3>
+                        <p>Among top 75 from a nationwide pool of 15,000+ candidates. One year program where I learn about VLSI and Semiconductor design practicials.</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>1st Place at HackWIE 3.0</h3>
+                        <p>Out of 200+ teams at a premier women-in-engineering multi-college hackathon, for developing an innovative social media harassment detection system.</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Microsoft Azure's Code Without Barriers</h3>
+                        <p>Chosen as a mentee, collaborating on Gen AI projects including sentiment analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">Community Involvement</h2>
+            <div class="community-content">
+                <div class="community-item">
+                    <i class="fas fa-users"></i>
+                    <h3>DSA Lead Mentor</h3>
+                    <p>Mentored 100+ women as the DSA lead regarding DSA and Web development in my college's coding club.</p>
+                </div>
+                <div class="community-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Active Community Contributor</h3>
+                    <p>Actively contributing to communities like Women Who Code, SheFi, GirlUp Coders Colony and SheCodes Foundation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Anamika</div>
+                <div class="footer-social">
+                    <a href="https://github.com/Anamika1608" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anamika. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
